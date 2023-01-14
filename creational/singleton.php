@@ -27,12 +27,16 @@ final class Connection
     /**
      * @return string
      */
+    protected function __construct()
+    {
 
-    public function __clone(): void
+    }
+
+    protected function __clone(): void
     {
         // TODO: Implement __clone() method.
     }
-    public function __wakeup(): void
+    protected function __wakeup(): void
     {
         // TODO: Implement __wakeup() method.
     }
