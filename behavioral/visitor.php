@@ -12,12 +12,12 @@ class RecorderVisiter implements WorkerVisitor
 
     public function visitDeveloper(Worker $developer)
     {
-        $this->visited = $developer;
+        $this->visited[] = $developer;
     }
 
     public function visitDesigner(Designer $designer)
     {
-        $this->visited = $designer;
+        $this->visited[] = $designer;
     }
 
     /**
