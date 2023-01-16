@@ -37,5 +37,5 @@ class NullWorker implements Worker
 $developer = new Developer();
 $nulldeveloper = new NullWorker();
 
-$objectManager = new ObjectManager($nulldeveloper);
+$objectManager = new ObjectManager($developer);
 $objectManager->goWork();
